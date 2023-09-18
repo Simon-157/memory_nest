@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class CustomColor {
   // Solid colors
   static const Color primaryColor = Color(0xFF00A3E1);
-  static const Color secondaryColor = Color(0xFF7F8FA4);
+  static const Color secondaryColor = Color.fromARGB(143, 75, 26, 103);
 
   // Gradient colors
   static const LinearGradient primaryGradient = LinearGradient(

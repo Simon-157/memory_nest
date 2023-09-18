@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 import '../../utils/color_pallete.dart';
 
@@ -82,18 +83,15 @@ class HomePage extends StatelessWidget {
                           ),
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.center,
-                            children: const [
-                              Icon(
+                            children:  [
+                              InkWell(
+
+                              child: const Icon(
                                 Icons.explore,
                                 color: Colors.white,
+                                
                               ),
-                              SizedBox(width: 10),
-                              Text(
-                                'Continue',
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 25,
-                                ),
+                              onTap: () => {context.go('/login')},
                               )
                             ],
                           ),
