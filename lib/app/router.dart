@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:memory_nest/screens/auth/login_screen.dart';
 import 'package:memory_nest/screens/home/home.dart';
+import 'package:memory_nest/screens/patient/patient_screen.dart';
 import 'package:memory_nest/utils/routes.dart';
 
 
@@ -21,6 +22,14 @@ class AppRoutes {
         path: '/login',
         pageBuilder: (context, state) {
           return MaterialPage(child: CustomSocialLoginScreen());
+        },
+      ),
+
+      GoRoute(
+        name: AppRoutesConstants.patientRouteName,
+        path: '/patient',
+        pageBuilder: (context, state) {
+          return const MaterialPage(child: (PatientScreen()));
         },
       ),
     ]);

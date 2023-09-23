@@ -92,6 +92,16 @@ class HomePage extends StatelessWidget {
                                 
                               ),
                               onTap: () => {context.go('/login')},
+                              ),
+
+                               InkWell(
+
+                              child: const Icon(
+                                Icons.hourglass_bottom_rounded,
+                                color: Colors.white,
+                                
+                              ),
+                              onTap: () => {context.go('/patient')},
                               )
                             ],
                           ),

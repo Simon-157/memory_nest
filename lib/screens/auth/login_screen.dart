@@ -82,7 +82,7 @@ class CustomSocialLoginScreen extends StatelessWidget {
                     // Handle Facebook Sign-In Logic
                   },
                   style: ElevatedButton.styleFrom(
-                    primary: Colors.blue,
+                    primary: CustomColor.secondaryColor,
                   ),
                   child: Row(
                     mainAxisSize: MainAxisSize.min,
