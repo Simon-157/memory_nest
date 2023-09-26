@@ -6,4 +6,5 @@ class AppRoutesConstants {
   static const String patientRouteName = 'patient';
   static const String volunteerRouteName = 'volunteer';
   static const String careTakerRouteName = 'caretaker';
+
 }

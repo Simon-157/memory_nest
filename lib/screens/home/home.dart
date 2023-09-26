@@ -3,12 +3,27 @@ import 'package:go_router/go_router.dart';
 
 import '../../utils/color_pallete.dart';
 
-class HomePage extends StatelessWidget {
+class HomePage extends StatefulWidget {
   HomePage({Key? key}) : super(key: key);
 
+  @override
+  _HomePageState createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
   final Shader iphoneShader =
       const LinearGradient(colors: [Color(0xff070D14), Color(0xff85D1EE)])
           .createShader(const Rect.fromLTWH(0, 100, 50, 2));
+
+
+  @override
+  void initState() {
+    super.initState();
+    // TODO: requestPermission
+    // TODO: getToken
+    // TODO: initInfo
+  }
+
 
   @override
   Widget build(BuildContext context) {
@@ -122,4 +137,6 @@ class HomePage extends StatelessWidget {
       ),
     );
   }
+  
+
 }

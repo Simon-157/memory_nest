@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1042152684723",
+    "project_id": "memorynest",
+    "storage_bucket": "memorynest.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1042152684723:android:739b23d270af765e9bc4c6",
+        "android_client_info": {
+          "package_name": "com.example.memory_nest"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWXr3r_5ZYmB74i6bjoADqKt4XeG_Nihw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -8,14 +8,14 @@ import 'package:memory_nest/widgets/bottom_nav.dart';
 import 'package:memory_nest/widgets/maps/map_widget.dart';
 import 'package:memory_nest/widgets/profile_avatar.dart';
 
-class PatientScreen extends StatefulWidget {
-  const PatientScreen({super.key});
+class CareGiverScreen extends StatefulWidget {
+  const CareGiverScreen({super.key});
 
   @override
-  _PatientScreenState createState() => _PatientScreenState();
+  _CareGiverScreenState createState() => _CareGiverScreenState();
 }
 
-class _PatientScreenState extends State<PatientScreen> {
+class _CareGiverScreenState extends State<CareGiverScreen> {
   late LatLng userLocation = LatLng(0.0, 0.0);
   bool isLocationLoading = true;
 

@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:memory_nest/app/router.dart';
+// import 'package:firebase_messaging/firebase_messaging.dart';
 
-void main() {
-    WidgetsFlutterBinding.ensureInitialized();
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  // await Firebase.initializeApp();
+  // await FirebaseMessaging.instance.getInitialMessage();
   runApp(const MyApp());
 }
 

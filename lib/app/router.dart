@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:memory_nest/screens/auth/login_screen.dart';
+import 'package:memory_nest/screens/caregiver/caregiver_screen.dart';
 import 'package:memory_nest/screens/home/home.dart';
 import 'package:memory_nest/screens/patient/patient_screen.dart';
 import 'package:memory_nest/utils/routes.dart';
@@ -30,6 +31,14 @@ class AppRoutes {
         path: '/patient',
         pageBuilder: (context, state) {
           return const MaterialPage(child: (PatientScreen()));
+        },
+      ),
+
+      GoRoute(
+        name: AppRoutesConstants.careTakerRouteName,
+        path: '/caregiver',
+        pageBuilder: (context, state) {
+          return const MaterialPage(child: (CareGiverScreen()));
         },
       ),
     ]);
